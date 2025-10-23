@@ -1,23 +1,19 @@
-// GrievEase/src/components/ui/sonner.tsx
-
-// "use client"; is optional but harmless in Vite/React
-import * as React from "react"; 
+// The problem line MUST BE GONE: import { useTheme } from "next-themes"; 
 import { Toaster as Sonner, ToasterProps } from "sonner";
-// REMOVED: import { useTheme } from "next-themes"; <--- This was the crashing line
+import * as React from "react"; 
+// This is the correct, simple Vite/React version:
 
 const Toaster = ({ ...props }: ToasterProps) => {
-  // Use a sensible default theme, or remove this line entirely if
-  // you just want the browser default.
+  // Hardcode theme since useTheme is removed
   const theme = "light"; 
 
   return (
     <Sonner
-      // Using the variable theme, which is now 'light'
       theme={theme as ToasterProps["theme"]}
       className="toaster group"
-      // Assuming your Tailwind CSS variables are set up for styling
       style={
         {
+          // ... styling variables
           "--normal-bg": "var(--popover)",
           "--normal-text": "var(--popover-foreground)",
           "--normal-border": "var(--border)",
