@@ -1,9 +1,10 @@
-// Remove: import { useTheme } from "next-themes"; 
 import { Toaster as Sonner, ToasterProps } from "sonner";
-import * as React from "react"; // Added to correctly scope React
+import * as React from "react"; // Ensure React is imported if needed
+
+// Note: Removed the import: import { useTheme } from "next-themes";
 
 const Toaster = ({ ...props }: ToasterProps) => {
-  // Hardcode theme instead of reading from useTheme()
+  // Hardcode theme or use a simple state management hook instead of next-themes
   const theme = "light"; 
 
   return (
