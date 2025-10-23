@@ -4,7 +4,6 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    /* CORE FRAMEWORK & STYLING */
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.25.1",
@@ -21,10 +20,10 @@
     "recharts": "^2.12.7",
     "vaul": "^0.9.1",
     
-    /* SUPABASE */
+  
     "@supabase/supabase-js": "^2.44.4",
     
-    /* UI PRMITIVES (Radix-UI) */
+    
     "@radix-ui/react-accordion": "^1.2.0",
     "@radix-ui/react-alert-dialog": "^1.1.1",
     "@radix-ui/react-aspect-ratio": "^1.1.1",
@@ -54,7 +53,7 @@
     
   },
   "devDependencies": {
-    /* CORE BUILD & DEV ENVIRONMENT */
+   
     "vite": "^5.3.3",
     "@vitejs/plugin-react-swc": "^3.7.0",
     "typescript": "^5.5.3",
@@ -62,7 +61,7 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     
-    /* TAILWIND */
+  
     "tailwindcss": "^3.4.4",
     "postcss": "^8.4.39",
     "autoprefixer": "^10.4.19"
